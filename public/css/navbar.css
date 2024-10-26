@@ -1,0 +1,28 @@
+nav {
+    margin-bottom: 75px;
+    width: 100vw; /* Mengisi 100% lebar viewport */
+    height: 50px; /* Tinggi navbar */
+    background-color: #6442B4; /* Warna latar navbar */
+    display: flex;
+    flex-direction: row;
+}
+img{
+    border-radius: 50%;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 12px 0 12px;
+}
+
+ul li a{
+    text-decoration: none;
+}

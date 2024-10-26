@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran elemen */
+    margin: 0; /* Menghilangkan margin default */
+    padding: 0; /* Menghilangkan padding default */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Memposisikan secara horizontal */
+    align-items: center;    /* Memposisikan secara vertikal */
+    font-family: "Poppins", sans-serif; /* Pengaturan font */
+    min-height: 100vh; /* 100% tinggi layar */
+    margin: 0;
+}
+
+/* Responsif untuk layar kecil (handphone dan tablet kecil) */
+@media (max-width: 768px) {
+
+    /* Atur ulang main untuk layar kecil */
+    main {
+        width: 100%; /* Buat lebar main mengikuti lebar layar */
+        padding: 10px; /* Tambahkan padding agar elemen tidak terlalu rapat */
+        margin: 0; /* Hilangkan margin */
+    }
+
+    /* Navbar */
+    nav {
+        flex-direction: column; /* Susun elemen navbar secara vertikal */
+        height: auto; /* Sesuaikan tinggi navbar */
+        padding: 10px;
+    }
+
+    /* Item di navbar */
+    nav ul {
+        flex-direction: column; /* Ubah susunan menjadi kolom */
+    }
+
+    nav ul li {
+        margin: 8px 0; /* Tambahkan margin antar item navbar */
+        font-size: 18px; /* Sesuaikan ukuran font */
+    }
+
+    /* Logo */
+    .logo {
+        width: 120px; /* Kurangi ukuran logo */
+        margin: 10px 0; /* Jarak di atas dan bawah logo */
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column; /* Susun footer secara vertikal */
+        padding: 10px;
+    }
+
+    /* Atur ukuran font untuk owner dan invest di footer */
+    .owner, .invest {
+        font-size: 14px;
+        justify-content: center; /* Pusatkan teks */
+    }
+
+    /* Jual-Beli section */
+    .jual-beli {
+        width: 100%; /* Buat lebar section mengikuti lebar layar */
+        font-size: 14px; /* Sesuaikan ukuran font */
+        padding: 10px;
+        margin: 10px 0;
+    }
+
+    /* Social Media Section */
+    .social-media {
+        flex-direction: column; /* Susun ikon sosial media secara vertikal */
+        align-items: center;
+    }
+
+    .social-media img {
+        width: 30px; /* Ukuran lebih kecil untuk ikon */
+        margin: 5px; /* Tambahkan jarak antar ikon */
+    }
+
+    /* Konten rules */
+    .list-rules {
+        margin: 10px;
+    }
+
+    .list-rules h2 {
+        font-size: 20px; /* Sesuaikan ukuran font */
+    }
+
+    .list-rules ol li {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    /* Ebook section */
+    .ebook-container {
+        flex-direction: column; /* Susun e-book secara vertikal */
+        align-items: center;
+    }
+
+    .ebook-item {
+        width: 90%; /* Sesuaikan lebar item e-book */
+        font-size: 18px; /* Sesuaikan ukuran font */
+    }
+
+    /* Pop-up untuk handphone */
+    .popup-content {
+        width: 90%; /* Perkecil lebar pop-up di layar kecil */
+        padding: 15px;
+    }
+
+    /* Tombol konten */
+    .showContentBtn, .showRulesBtn {
+        font-size: 16px; /* Sesuaikan ukuran font */
+        padding: 8px 16px;
+    }
+}
+

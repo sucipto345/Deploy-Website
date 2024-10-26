@@ -1,0 +1,10 @@
+h1{
+    width: 100vh;
+    height: 50vh;
+    background-color: Yellow;
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}

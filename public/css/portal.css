@@ -1,0 +1,235 @@
+main {
+    width: 1000px; /* Lebar utama */
+    height: auto; /* Tinggi otomatis */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(100, 66, 180, 0.5); /* Transparansi background */
+    border-radius: 50px; /* Sudut melengkung */
+    margin: 10px;
+}
+
+/* Styling untuk paragraf di main */
+main p {
+    font-weight: 600; /* Berat font */
+    font-size: 25px;
+    margin: 10px;
+}
+
+/* Jual Beli */
+.jual-beli {
+    margin: 45px;
+    padding: 15px;
+    color: black;
+    background-color: white;
+    border-radius: 35px; /* Sudut melengkung */
+    opacity: 1;
+}
+
+.jual-beli:hover {
+    opacity: 0.5; /* Efek hover */
+}
+
+/* Link */
+a {
+    font-size: 25px; /* Ukuran font */
+    font-weight: bold; /* Berat font */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: black;
+}
+
+/* Logo */
+.logo {
+    padding-top: 20px;
+    border-radius: 150px; /* Sudut melengkung */
+    margin-bottom: 20px; /* Jarak antara logo dan teks */
+}
+
+/* Media Sosial */
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-media img {
+    margin: 10px; /* Jarak antar ikon sosial media */
+}
+
+/* tombol menampilkan  konten */
+.showContentBtn{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.showRulesBtn{
+    margin: 25px;
+}
+
+.showRulesBtn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.showContentBtn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* rules */
+.list-rules {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Pusatkan secara horizontal */
+    margin: 20px;
+}
+
+/* Atur h2 dalam flex container */
+.list-rules h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Jika ingin teks tetap di tengah */
+    margin-bottom: 20px; /* Tambahkan jarak di bawah judul */
+    color: white; /* Ubah warna teks menjadi putih */
+}
+
+/* Atur setiap item li */
+.list-rules ol li {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0; /* Kurangi jarak antar item agar lebih rapi */
+    text-align: left;
+    font-weight: bold;
+    color: white; /* Ubah warna teks menjadi putih */
+}
+
+/* Kontainer E-book */
+.hidden-content {
+    display: none; /* Konten e-book disembunyikan */
+}
+
+#mainContent {
+    width: auto; /* Ukuran default main */
+    transition: width 0.5s ease; /* Transisi untuk perubahan ukuran */
+    padding-bottom: 10px;
+}
+
+#mainContent.expanded {
+    width: auto; /* Ukuran saat tombol ditekan */
+    padding: 0px 50px 0px 50px;
+    margin-bottom: 20px;
+}
+
+.ebook-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.ebook-item {
+    width: 200px;
+    height: 75px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #6442B4;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.ebook-item:hover {
+    transform: scale(1.05);
+}
+
+
+/* Konten E-book */
+.ebook-content {
+    display: flex; /* Menyusun gambar dan judul dalam satu baris */
+    align-items: center; /* Mengatur rata tengah secara vertikal */
+}
+
+.ebook-container {
+    display: flex;
+    flex-wrap: wrap; /* Membuat item e-book membungkus ke baris baru */
+    gap: 20px; /* Jarak antar item */
+    margin-bottom: 50px;
+}
+
+.ebook-content {
+    display: flex; /* Menyusun gambar dan judul dalam satu baris */
+    align-items: center; /* Mengatur rata tengah secara vertikal */
+    padding: 10px; /* Tambahkan padding untuk jarak di dalam kontainer */
+}
+
+.ebook-image {
+    width: 150px; /* Atur lebar gambar */
+    height: 150px; /* Atur tinggi gambar untuk menjadikannya persegi */
+    object-fit: cover; /* Memastikan gambar tetap proporsional dan mengisi area tanpa mengubah rasio */
+    border-radius: 8px; /* Sudut melengkung untuk estetika */
+    margin-right: 10px; /* Jarak antara gambar dan judul */
+    margin-left: 20px; /* Jarak gambar dengan sisi kiri */
+}
+
+.ebook-title {
+    font-size: 20px; /* Ukuran font untuk judul */
+    font-weight: bold; /* Berat font judul */
+    margin-right: 20px; /* Jarak judul dengan sisi kanan */
+    flex-grow: 1; /* Memastikan judul mengambil ruang yang tersedia */
+}
+
+
+/* Pop-up */
+.popup {
+    display: none; /* Sembunyikan pop-up secara default */
+    position: fixed; /* Posisi tetap */
+    z-index: 1; /* Menempatkan di atas konten lainnya */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang gelap */
+}
+
+.popup-content {
+    background-color: white; /* Warna latar pop-up */
+    margin: 15% auto; /* Pusatkan pop-up */
+    padding: 20px; /* Jarak dalam pop-up */
+    border-radius: 8px; /* Sudut melengkung */
+    width: 80%; /* Lebar pop-up */
+    max-width: 800px; /* Lebar maksimum pop-up */
+    display: flex; /* Fleksibel untuk konten */
+}
+
+/* Pop-up Kiri dan Kanan */
+.popup-left {
+    flex: 1; /* 50% lebar untuk gambar */
+    padding-right: 20px; /* Jarak antara gambar dan konten */
+}
+
+.popup-right {
+    flex: 1; /* 50% lebar untuk deskripsi */
+}
+
+/* Close button */
+.close {
+    color: #aaaaaa; /* Warna close button */
+    float: right; /* Posisikan ke kanan */
+    font-size: 28px; /* Ukuran font */
+    font-weight: bold; /* Berat font */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* Warna saat hover */
+    text-decoration: none; /* Hilangkan garis bawah */
+    cursor: pointer; /* Ubah cursor saat hover */
+}
